@@ -68,7 +68,7 @@ app.post('/api/notes', (request, response) => {
 
 	notes = [...notes, newNote]
 
-	response.json(newNote)
+	response.status(201).json(newNote)
 })
 
 const PORT = 3001
